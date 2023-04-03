@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <main>
         <SSRProvider>
-          <Provider theme={defaultTheme}>
+          <Provider theme={defaultTheme} height="100vh">
             <Button
               variant="accent"
               onPress={() => alert('Hey there!')}
