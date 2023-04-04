@@ -1,4 +1,4 @@
-import { Item, ListView, View } from "@adobe/react-spectrum";
+import { Item, ListView, View, useDragAndDrop } from "@adobe/react-spectrum";
 
 export default function CottonSidebar() {
   const items = [
@@ -12,9 +12,21 @@ export default function CottonSidebar() {
     {id: 'divider', label: 'Divider'},
   ];
 
+  let { dragAndDropHooks } = useDragAndDrop({
+    getItems() {
+      return items;
+    },
+    onDragEnd(e) {
+      console.log(e);
+    },
+  });
+
   return (
     <View height="100%" >
-      <ListView aria-label="Draggable widget list">
+      <ListView
+        aria-label="Draggable widget list"
+        dragAndDropHooks={dragAndDropHooks}
+      >
         {
           items.map(item => (
             <Item key={item.id}>{item.label}</Item>
