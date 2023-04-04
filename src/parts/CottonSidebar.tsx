@@ -14,7 +14,7 @@ export default function CottonSidebar() {
 
   return (
     <View height="100%" >
-      <ListView>
+      <ListView aria-label="Draggable widget list">
         {
           items.map(item => (
             <Item key={item.id}>{item.label}</Item>
