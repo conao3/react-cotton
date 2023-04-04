@@ -12,7 +12,7 @@ export default function CottonSidebar() {
     {id: 'divider', label: 'Divider'},
   ];
 
-  let { dragAndDropHooks } = useDragAndDrop({
+  const { dragAndDropHooks } = useDragAndDrop({
     getItems: (keys) => [...keys].map((key) => ({'text/plain': String(key)})),
   });
 

@@ -3,14 +3,14 @@ import { TextDropItem, View } from "@adobe/react-spectrum";
 import { useDrop } from "react-aria";
 
 export default function CottonContent() {
-  let [dropped, setDropped] = React.useState<string>();
-  let ref = React.useRef(null);
-  let { dropProps, isDropTarget } = useDrop({
+  const [dropped, setDropped] = React.useState<string>();
+  const ref = React.useRef(null);
+  const { dropProps, isDropTarget } = useDrop({
     ref,
     async onDrop(e) {
-      let item = e.items.find((item) => item.kind === 'text' && item.types.has('text/plain')) as TextDropItem;
+      const item = e.items.find((item) => item.kind === 'text' && item.types.has('text/plain')) as TextDropItem;
       if (item) {
-        let text = await item.getText('text/plain');
+        const text = await item.getText('text/plain');
         setDropped(text);
       }
     }
