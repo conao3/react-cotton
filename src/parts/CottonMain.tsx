@@ -8,7 +8,7 @@ export default function CottonMain() {
     <Flex direction="column" height="100%" gap="size-100">
       <CottonHeader />
       <Flex direction="row" height="100%" gap="size-100">
-        <View width="size-6000"><CottonSidebar /></View>
+        <View width="size-3000"><CottonSidebar /></View>
         <View flex><CottonContent /></View>
       </Flex>
     </Flex>
