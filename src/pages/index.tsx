@@ -1,4 +1,5 @@
-import { Button, Provider, SSRProvider, defaultTheme } from '@adobe/react-spectrum'
+import CottonMain from '@/parts/CottonMain'
+import { Provider, SSRProvider, View, defaultTheme } from '@adobe/react-spectrum'
 import Head from 'next/head'
 
 export default function Home() {
@@ -13,12 +14,9 @@ export default function Home() {
       <main>
         <SSRProvider>
           <Provider theme={defaultTheme} height="100vh" colorScheme='dark'>
-            <Button
-              variant="accent"
-              onPress={() => alert('Hey there!')}
-            >
-              Hello React Spectrum!
-            </Button>
+            <View width="1800px" height="100%" margin="0 auto" paddingTop="size-100" borderWidth="thin" borderColor="dark">
+              <CottonMain />
+            </View>
           </Provider>
         </SSRProvider>
       </main>
