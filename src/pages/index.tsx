@@ -14,7 +14,7 @@ export default function Home() {
       <main>
         <SSRProvider>
           <Provider theme={defaultTheme} height="100vh" colorScheme='dark'>
-            <View width="1800px" height="100%" margin="0 auto" paddingTop="size-100">
+            <View maxWidth="1800px" height="100%" margin="0 auto" paddingTop="size-100">
               <CottonMain />
             </View>
           </Provider>
