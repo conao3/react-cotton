@@ -13,16 +13,11 @@ export default function CottonSidebar() {
   ];
 
   let { dragAndDropHooks } = useDragAndDrop({
-    getItems() {
-      return items;
-    },
-    onDragEnd(e) {
-      console.log(e);
-    },
+    getItems: (keys) => [...keys].map((key) => ({'text/plain': String(key)})),
   });
 
   return (
-    <View height="100%" >
+    <View height="100%">
       <ListView
         aria-label="Draggable widget list"
         dragAndDropHooks={dragAndDropHooks}
