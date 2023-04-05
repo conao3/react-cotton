@@ -22,11 +22,9 @@ export default function CottonSidebar() {
         aria-label="Draggable widget list"
         dragAndDropHooks={dragAndDropHooks}
       >
-        {
-          items.map(item => (
-            <Item key={item.id}>{item.label}</Item>
-          ))
-        }
+        {items.map(item => (
+          <Item key={item.id}>{item.label}</Item>
+        ))}
       </ListView>
     </View>
   )
