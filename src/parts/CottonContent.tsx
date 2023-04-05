@@ -8,6 +8,8 @@ export default function CottonContent() {
   const { dropProps, isDropTarget } = useDrop({
     ref,
     async onDrop(e) {
+      console.log(e);
+
       // Only one item is supported for now
       const item = e.items.find((item) => item.kind === 'text' && item.types.has('cotton-widget')) as TextDropItem;
       if (item) {
