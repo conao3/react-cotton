@@ -24,9 +24,9 @@ export default function CottonContent() {
       borderRadius="regular"
     >
       <div
-        {...dropProps}
-        ref={ref}
         className="droparea"
+        ref={ref}
+        {...dropProps}
       >
         {dropped || 'Drop here'}
         {isDropTarget ? "DropTarget" : null}
