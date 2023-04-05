@@ -13,7 +13,10 @@ export default function CottonSidebar() {
   ];
 
   const { dragAndDropHooks } = useDragAndDrop({
-    getItems: (keys) => [...keys].map((key) => ({'text/plain': String(key)})),
+    getItems: (keys) => [...keys].map((key) => ({
+      'cotton-widget': 'true',
+      'id': String(key),
+    })),
   });
 
   return (
