@@ -28,13 +28,13 @@ Cotton provides a visual interface for building forms and layouts through an int
 
 ### Prerequisites
 
-- Node.js 18 or later
-- npm, yarn, or pnpm
+- Node.js 20.9 or later
+- pnpm 7.33.7
 
 ### Installation
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### Development
@@ -42,7 +42,7 @@ npm install
 Start the development server:
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
@@ -52,7 +52,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 Create a production build:
 
 ```bash
-npm run build
+pnpm build
 ```
 
 ### Production
@@ -60,7 +60,7 @@ npm run build
 Run the production server:
 
 ```bash
-npm start
+pnpm start
 ```
 
 ## Project Structure
