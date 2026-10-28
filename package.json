@@ -21,10 +21,11 @@
     "styled-jsx": "5.1.7"
   },
   "devDependencies": {
-    "eslint": "9.39.1",
-    "typescript": "5.9.3"
+    "eslint": "10.13.0",
+    "typescript": "6.0.3"
   },
   "engines": {
-    "node": ">=20.9.0"
-  }
+    "node": ">=26"
+  },
+  "packageManager": "pnpm@12.15.0"
 }
